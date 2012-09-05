@@ -1,0 +1,11 @@
+--- configure	2012-09-05 21:25:10.277016184 +0800
++++ configure	2012-09-05 21:25:37.771024068 +0800
+@@ -13,6 +13,8 @@
+ # Call the `configure' script located in `builds/unix'.
+ #
+ 
++export LDFLAGS="$LDFLAGS -lm"
++
+ rm -f config.mk builds/unix/unix-def.mk builds/unix/unix-cc.mk
+ 
+ if test "x$GNUMAKE" = x; then

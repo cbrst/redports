@@ -1,0 +1,111 @@
+--- data/README.style	23 Feb 2005 06:01:05 -0000	1.8
++++ data/README.style	19 Apr 2006 15:04:32 -0000
+@@ -14,6 +14,11 @@
+ <name>.borderWidth: 	width of the texture border in pixels
+ <name>.borderColor: 	color of the texture border
+ 
++For textures with text:
++<name>.textColor	text color
++<name>.textShadowColor	text shadow color
++<name>.drawShadow	boolean to enable text shadows
++
+ The BNF for the appearance is:
+ 
+     <appearance> 	:= parentrelative | 
+@@ -112,6 +117,12 @@
+ menu.title.textColor		- title text color 
+ Menu.Title.TextColor
+ 
++menu.title.textShadowColor	- title text shadow color
++Menu.Title.TextShadowColor
++
++menu.title.drawShadow		- title text shadow color
++Menu.Title.DrawShadow
++
+ menu.title.font			- title text font
+ Menu.Title.Font
+ 
+@@ -135,6 +146,12 @@
+ menu.frame.textColor
+ Menu.Frame.TextColor
+ 
++menu.frame.textShadowColor	- title text shadow color
++Menu.Frame.TextShadowColor
++
++menu.frame.drawShadow		- title text shadow color
++Menu.Frame.DrawShadow
++
+ menu.frame.disabledColor	- disabled text color
+ Menu.Frame.DisabledColor
+ 
+@@ -161,6 +178,13 @@
+ menu.active.textColor		- menu item text color 
+ Menu.Active.TextColor
+ 
++menu.active.textShadowColor	- title text shadow color
++Menu.Active.TextShadowColor
++
++menu.active.drawShadow		- title text shadow color
++Menu.Active.DrawShadow
++
++
+ 
+ Slit Style
+ ------------------------------------------------------------------------------
+@@ -186,6 +210,7 @@
+ 	.color2
+ 	.borderWidth
+ 	.borderColor
++	.drawShadow
+ 
+ toolbar.label			- workspace label texture
+ Toolbar.Label
+@@ -218,6 +243,8 @@
+ 	.color2
+ 	.borderWidth
+ 	.borderColor
++	.drawShadow
++	.shadowColor
+ 
+ toolbar.button.pressed		- pressed button texture
+ Toolbar.Button.Pressed
+@@ -230,12 +257,21 @@
+ toolbar.label.textColor		- workspace label text color
+ Toolbar.Label.TextColor
+ 
++toolbar.label.textShadowColor	- workspace label text shadow color
++Toolbar.Label.TextShadowColor
++
+ toolbar.windowLabel.textColor	- window label text color
+ Toolbar.Label.TextColor
+ 
++toolbar.windowLabel.textShadowColor	- window label text shadow color
++Toolbar.WindowLabel.TextShadowColor
++
+ toolbar.clock.textClolor	- clock label text color
+ Toolbar.Label.TextColor
+ 
++toolbar.clock.textClolor	- clock label text shadow color
++Toolbar.Clock.TextShadowColor
++
+ toolbar.button.foregroundColor	- bitmap color for buttons
+ Toolbar.Button.ForegroundColor
+ 
+@@ -281,6 +317,8 @@
+ 	.color2
+ 	.borderWidth
+ 	.borderColor
++	.drawShadow
++	.shadowColor
+ 
+ window.handle.focus		- focus handle texture
+ Window.Handle.Focus
+@@ -321,6 +359,8 @@
+ 	.color2
+ 	.borderWidth
+ 	.borderColor
++	.drawShadow
++	.shadowColor
+ 
+ window.handle.unfocus		- unfocused handle texture
+ Window.Handle.Unfocus

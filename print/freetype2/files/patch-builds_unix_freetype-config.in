@@ -1,0 +1,17 @@
+--- builds/unix/freetype-config.in	2012-09-05 21:25:10.271019092 +0800
++++ builds/unix/freetype-config.in	2012-09-05 21:25:16.057018207 +0800
+@@ -131,12 +131,8 @@
+ fi
+ 
+ if test "$echo_cflags" = "yes" ; then
+-  cflags="-I${SYSROOT}$includedir/freetype2"
+-  if test "${SYSROOT}$includedir" != "/usr/include" ; then
+-    echo $cflags -I${SYSROOT}$includedir
+-  else
+-    echo $cflags
+-  fi
++   cflags="-I@includedir@/freetype2 -I@includedir@"
++   echo $cflags
+ fi
+ 
+ if test "$echo_libs" = "yes" ; then
