@@ -1,4 +1,3 @@
-etc/bash_completion.d/herbstclient-completion
 etc/xdg/herbstluftwm/autostart
 etc/xdg/herbstluftwm/panel.sh
 etc/xdg/herbstluftwm/restartpanels.sh
@@ -22,9 +21,12 @@ share/doc/herbstluftwm/herbstluftwm.html
 share/man/man1/herbstclient.1
 share/man/man1/herbstluftwm.1
 share/xsessions/herbstluftwm.desktop
-share/zsh/functions/Completion/X/_herbstclient
+%%BASH%%etc/bash_completion.d/herbstclient-completion
+%%ZSH%%share/zsh/functions/Completion/X/_herbstclient
 
 @dirrm etc/xdg/herbstluftwm
-@dirrm share/doc/herbstluftwm
 @dirrm share/doc/herbstluftwm/examples
-@dirrm share/licenses/herbstluftwm
+@dirrm share/doc/herbstluftwm
+%%BASH%%@dirrmtry etc/bash_completion.d
+%%ZSH%%@dirrmtry share/zsh/functions/Completion/X/
+%%ZSH%%@dirrmtry share/zsh/functions/Completion
