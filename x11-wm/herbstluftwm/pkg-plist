@@ -2,27 +2,29 @@ etc/bash_completion.d/herbstclient-completion
 etc/xdg/herbstluftwm/autostart
 etc/xdg/herbstluftwm/panel.sh
 etc/xdg/herbstluftwm/restartpanels.sh
-usr/bin/herbstclient
-usr/bin/herbstluftwm
-usr/share/doc/herbstluftwm/BUGS
-usr/share/doc/herbstluftwm/examples/README
-usr/share/doc/herbstluftwm/examples/dmenu.sh
-usr/share/doc/herbstluftwm/examples/dumpbeautify.sh
-usr/share/doc/herbstluftwm/examples/exec_on_tag.sh
-usr/share/doc/herbstluftwm/examples/execwith.sh
-usr/share/doc/herbstluftwm/examples/herbstcommander.sh
-usr/share/doc/herbstluftwm/examples/layout.sh
-usr/share/doc/herbstluftwm/examples/loadstate.sh
-usr/share/doc/herbstluftwm/examples/savestate.sh
-usr/share/doc/herbstluftwm/herbstclient.html
-usr/share/doc/herbstluftwm/herbstluftwm.html
-usr/share/licenses/herbstluftwm/LICENSE
-usr/share/man/man1/herbstclient.1
-usr/share/man/man1/herbstluftwm.1
-usr/share/xsessions/herbstluftwm.desktop
-usr/share/zsh/functions/Completion/X/_herbstclient
+bin/herbstclient
+bin/herbstluftwm
+share/doc/herbstluftwm/BUGS
+share/doc/herbstluftwm/LICENSE
+share/doc/herbstluftwm/NEWS
+share/doc/herbstluftwm/README
+share/doc/herbstluftwm/examples/README
+share/doc/herbstluftwm/examples/dmenu.sh
+share/doc/herbstluftwm/examples/dumpbeautify.sh
+share/doc/herbstluftwm/examples/exec_on_tag.sh
+share/doc/herbstluftwm/examples/execwith.sh
+share/doc/herbstluftwm/examples/herbstcommander.sh
+share/doc/herbstluftwm/examples/layout.sh
+share/doc/herbstluftwm/examples/loadstate.sh
+share/doc/herbstluftwm/examples/savestate.sh
+share/doc/herbstluftwm/herbstclient.html
+share/doc/herbstluftwm/herbstluftwm.html
+share/man/man1/herbstclient.1
+share/man/man1/herbstluftwm.1
+share/xsessions/herbstluftwm.desktop
+share/zsh/functions/Completion/X/_herbstclient
 
 @dirrm etc/xdg/herbstluftwm
-@dirrm usr/share/doc/herbstluftwm
-@dirrm usr/share/doc/herbstluftwm/examples
-@dirrm usr/share/licenses/herbstluftwm
+@dirrm share/doc/herbstluftwm
+@dirrm share/doc/herbstluftwm/examples
+@dirrm share/licenses/herbstluftwm
