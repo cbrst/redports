@@ -40,7 +40,7 @@ RUN_DEPENDS+=    sudo:${PORTSDIR}/security/sudo
 .endif
 
 .if ${PORT_OPTIONS:MENCODING}
-RUN_DEPENDS+=    ${PYTHON_PKGNAMEPREFIX}chardet>0:${PORTSDIR}/textproc/chardet
+RUN_DEPENDS+=    ${PYTHON_PKGNAMEPREFIX}chardet>0:${PORTSDIR}/textproc/py-chardet
 .endif
 
 .if ${PORT_OPTIONS:MHIGHLIGHT}
