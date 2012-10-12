@@ -1,10 +1,15 @@
 # NAME
 Redports
 
+* * *
+
 # Description
 My collection of FreeBSD ports. Mostly copies of the default ports with some additional patches applied.
 
+* * *
+
 # Notes
+
 ### net-p2p/rtorrent
 rtorrent 0.9.2 with vim-keybindings and canvas color patches
 
@@ -37,3 +42,6 @@ blackbox 0.70.1 with reversed mousewheel and text shadow patches.
 
 ### x11-wm/herbstluftwm
 herbstluftwm 0.4
+
+### x11-wm/monsterwm
+tiny, monstrous, dynamic tiling WM
