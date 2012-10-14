@@ -22,6 +22,9 @@ Added build options for dependencies
 ### www/fb
 Command-line client to manage pastes on http://paste.xinu.at
 
+### www/luakit
+Updated luakit. Version in port tree is >1 year outdated :S
+
 ### x11/dunst
 Highly configurable and lightweight notification daemon.
 
