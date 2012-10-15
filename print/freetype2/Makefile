@@ -1,36 +1,31 @@
-# New ports collection makefile for:	freetype
-# Date created:		January 24, 1998
-# Whom:			jseger@FreeBSD.org
-#
-# $FreeBSD: ports/print/freetype2/Makefile,v 1.100 2012/04/07 15:29:25 kwm Exp $
-#   $MCom: ports/print/freetype2/Makefile,v 1.28 2011/10/25 18:31:21 kwm Exp $
-#
+# $FreeBSD$
 
-PORTNAME=	freetype2
-PORTVERSION=	2.4.9
-PORTREVISION=	1
-CATEGORIES=	print
-MASTER_SITES=	SF/freetype/${PORTNAME}/${PORTVERSION} \
-		http://sunsite.cnlab-switch.ch/ftp/mirror/freetype/freetype2/ \
-		http://www.funet.fi/pub/mirrors/ftp.freetype.org/freetype2/ \
-		http://ftp.sunet.se/pub/text-processing/freetype/freetype2/ \
-		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,graphics/freetype/&,} \
-		ftp://ftp.freetype.org/freetype/freetype2/
-DISTNAME=	${PORTNAME:S/2//}-${PORTVERSION}
+PORTNAME=       freetype2
+PORTVERSION=    2.4.9
+PORTREVISION=   2
+CATEGORIES=     print
+MASTER_SITES=   SF/freetype/${PORTNAME}/${PORTVERSION} \
+                http://sunsite.cnlab-switch.ch/ftp/mirror/freetype/freetype2/ \
+                http://www.funet.fi/pub/mirrors/ftp.freetype.org/freetype2/ \
+                http://ftp.sunet.se/pub/text-processing/freetype/freetype2/ \
+                ${MASTER_SITE_RINGSERVER:S,%SUBDIR%,graphics/freetype/&,} \
+                ftp://ftp.freetype.org/freetype/freetype2/
 
-MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A free and portable TrueType font rendering engine
+DISTNAME=       ${PORTNAME:S/2//}-${PORTVERSION}
 
-USE_AUTOTOOLS=	libtool
-USE_BZIP2=	yes
-USE_GMAKE=	yes
-MAKE_JOBS_SAFE=	yes
-MAKE_ENV=	TOP=""
-USE_LDCONFIG=	yes
-GNU_CONFIGURE=	yes
-USE_GNOME=	pkgconfig ltverhack:9
-LIBTOOLFILES=	builds/unix/configure
-CONFIGURE_WRKSRC=	${WRKSRC}/builds/unix
+MAINTAINER=     crshd@mail.com
+COMMENT=        A free and portable TrueType font rendering engine
+
+USE_AUTOTOOLS=  libtool
+USE_BZIP2=      yes
+USE_GMAKE=      yes
+MAKE_JOBS_SAFE= yes
+MAKE_ENV=       TOP=""
+USE_LDCONFIG=   yes
+GNU_CONFIGURE=  yes
+USE_GNOME=      pkgconfig ltverhack:9
+LIBTOOLFILES=   builds/unix/configure
+CONFIGURE_WRKSRC= ${WRKSRC}/builds/unix
 
 .if defined(WITH_LCD_FILTERING)
 CFLAGS+=	-DFT_CONFIG_OPTION_SUBPIXEL_RENDERING
@@ -66,5 +61,8 @@ pre-configure:
 
 post-configure:
 	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} setup)
+
+post-install:
+	@${INSTALL_SCRIPT} ${SCRIPTDIR}/infinality-settings.sh ${PREFIX}/etc/profile.d
 
 .include <bsd.port.mk>

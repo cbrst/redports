@@ -1,4 +1,5 @@
 bin/freetype-config
+etc/profile.d/infinality-settings.sh
 include/freetype2/freetype/config/ftconfig.h
 include/freetype2/freetype/config/ftheader.h
 include/freetype2/freetype/config/ftmodule.h
