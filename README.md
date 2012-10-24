@@ -40,6 +40,9 @@ Chained keybindings for X11
 ### x11-fonts/fontconfig-infinality
 Additional fontconfig files for infinality patched freetype. **Installs in addition to the standard fontconfig.**
 
+### x11-fonts/libXft
+Ubuntu-patched libXft 2.2.0 to compliment infinality patched freetype.
+
 ### x11-wm/blackbox
 blackbox 0.70.1 with reversed mousewheel and text shadow patches.
 
