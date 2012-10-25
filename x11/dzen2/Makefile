@@ -42,7 +42,8 @@ post-patch:
 	  	-e 's/^CFLAGS =\(.*\)$$/CFLAGS =\1 -DDZEN_XINERAMA/g'	\
 		${WRKSRC}/config.mk
 .endif
-	${REINPLACE_CMD} -e 's,/usr/X11R6,${LOCALBASE},g'       \
+	${REINPLACE_CMD} -e 's,/usr/X11R6,${LOCALBASE},g' \
+		-e 's/^LDFLAGS = \(.*\)/LDFLAGS = \1 -lm/g' \
 		${WRKSRC}/config.mk
 
 .include <bsd.port.post.mk>
