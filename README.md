@@ -34,6 +34,9 @@ Updated dzen2 to git.
 ### x11/dzen-gadgets-svn
 Updated dzen-gadgets
 
+### x11/rxvt-unicode
+Rxvt-Unicode with font-width patch for correct display of fonts using XFT.
+
 ### x11/xchainkeys
 Chained keybindings for X11
 
