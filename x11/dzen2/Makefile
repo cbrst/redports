@@ -1,19 +1,25 @@
 # $FreeBSD$
 
 PORTNAME      = dzen2
-PKGNAMESUFFIX = -svn
-PORTVERSION   = 20091018
+DISTVERSION   = 20121024
 PORTREVISION  = 1
 CATEGORIES    = x11
-MASTER_SITES  = http://xmonad-dzen2-freebsd.googlecode.com/files/
+
+USE_GITHUB    = yes
+MASTER_SITES  = GITHUB
+
+GH_ACCOUNT    = robm
+GH_PROJECT    = dzen
+GH_TAGNAME    = master
+GH_COMMIT     = 982023f
 
 MAINTAINER = crshd@mail.com
 COMMENT    = General purpose messaging, notification and menuing program for X11
 
-USE_XORG=	x11
+USE_XORG = x11
 
-OPTIONS=	XPM		"Enable XPM support" On \
-		XINERAMA	"Enable Xinerama support" On
+OPTIONS = XPM       "Enable XPM support"      On \
+          XINERAMA  "Enable Xinerama support" On
 
 .include <bsd.port.pre.mk>
 

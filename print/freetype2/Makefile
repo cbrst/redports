@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=       freetype2
-PORTVERSION=    2.4.9
-PORTREVISION=   2
+PORTVERSION=    2.4.10
+PORTREVISION=   1
 CATEGORIES=     print
 MASTER_SITES=   SF/freetype/${PORTNAME}/${PORTVERSION} \
                 http://sunsite.cnlab-switch.ch/ftp/mirror/freetype/freetype2/ \

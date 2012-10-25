@@ -28,8 +28,8 @@ Updated luakit. Version in port tree is >1 year outdated :S
 ### x11/dunst
 Highly configurable and lightweight notification daemon.
 
-### x11/dzen-svn
-Updated dzen.
+### x11/dzen2
+Updated dzen2 to git.
 
 ### x11/dzen-gadgets-svn
 Updated dzen-gadgets
