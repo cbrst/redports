@@ -1,0 +1,10 @@
+--- build/configure.ac.features.orig	2012-10-25 14:50:57.631523537 +0800
++++ build/configure.ac.features	2012-10-25 14:51:11.405559401 +0800
+@@ -407,6 +407,7 @@
+ 	echo "The following features and utilities:"
+ 	echo "  cairo-trace:                $use_trace"
+ 	echo "  cairo-script-interpreter:   $use_interpreter"
++	echo "  cairo-perf-utils:           $use_perf_utils"
+ 	echo ""
+ 	echo "And the following internal features:"
+ 	echo "  pthread:       $use_pthread"

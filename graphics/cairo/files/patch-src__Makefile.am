@@ -1,0 +1,11 @@
+--- src/Makefile.am.orig	2012-10-25 14:50:57.577524053 +0800
++++ src/Makefile.am	2012-10-25 14:51:11.537549354 +0800
+@@ -46,7 +46,7 @@
+ 	$(enabled_cairo_private) \
+ 	$(enabled_cairo_sources) \
+ 	$(NULL)
+-libcairo_la_LDFLAGS = $(AM_LDFLAGS) -version-info $(CAIRO_LIBTOOL_VERSION_INFO) -no-undefined $(export_symbols)
++libcairo_la_LDFLAGS = $(AM_LDFLAGS) -version-info $(CAIRO_LIBTOOL_VERSION_INFO) -no-undefined $(export_symbols) -export-symbols-regex \^cairo_.*
+ libcairo_la_LIBADD = $(CAIRO_LIBS) \
+ 	$(cairo_cxx_lib)
+ libcairo_la_DEPENDENCIES = $(cairo_def_dependency) $(cairo_cxx_lib)
