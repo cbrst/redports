@@ -30,6 +30,7 @@ post-patch:
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/WWW-YoutubeViewer/bin/youtube-viewer ${PREFIX}/bin/
+	@${MKDIR} ${SITE_PERL}/WWW/
 	@${INSTALL_SCRIPT} ${WRKSRC}/WWW-YoutubeViewer/lib/WWW/YoutubeViewer.pm ${SITE_PERL}/WWW/
 
 .include <bsd.port.mk>
